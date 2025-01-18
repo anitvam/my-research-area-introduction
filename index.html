@@ -1,14 +1,14 @@
 <!DOCTYPE html><html lang="en"><head>
 	<meta name="generator" content="Hugo 0.137.1">
     <meta charset="utf-8">
-<title>Supporting Autonomic Computing via BDI Tooling</title>
+<title>Introduction to my research area</title>
 
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" href="/acsos-2024-phd-slides/reveal-js/dist/reset.css">
 <link rel="stylesheet" href="/acsos-2024-phd-slides/reveal-js/dist/reveal.css">
-  <link rel="stylesheet" href="/acsos-2024-phd-slides/css/custom-theme.min.bdf40efc606e81a7059cd1352ede02083c94c2a509a51b1c8ef7c24da61ff190.css" id="theme"><link rel="stylesheet" href="/acsos-2024-phd-slides/highlight-js/solarized-dark.min.css">
+  <link rel="stylesheet" href="/acsos-2024-phd-slides/css/custom-theme.min.8af395f46d20352c1926e865af4cded9878a6364ed4878bbba368b66ccdbc35a.css" id="theme"><link rel="stylesheet" href="/acsos-2024-phd-slides/highlight-js/solarized-dark.min.css">
 <link rel="stylesheet" href="https://gitcdn.link/repo/DanySK/css-blur-animation/master/blur.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oxygen Mono" rel="stylesheet">
@@ -23,13 +23,128 @@
       <div class="slides">
   
 
-    <section><h1 id="supporting-autonomic-computing">Supporting Autonomic Computing</h1>
-<h1 id="via-bdi-tooling">via BDI Tooling</h1>
-<br>
-<p>Martina Baiardi</p>
-<p><small>Department of Computer Science and Engineering (DISI)<br>
-Alma Mater Studiorum — Università di Bologna <br>
-Via dell’Università 50, 47522 Cesena (FC), Italy </small></p>
+    <section><h1 id="overview-on-my-research-area">Overview on my research area</h1>
+</section><section>
+<h1 id="brief-introduction">Brief introduction</h1>
+<ul>
+<li>2nd year PhD Student from <code>University of Bologna</code> (<code>UNIBO</code>)</li>
+<li>Supervisor:
+<img src="https://www.unibo.it/uniboweb/utils/UserImage.aspx?IdAnagrafica=503326&amp;IdFoto=e1c80103" alt=""> <a href="https://www.unibo.it/sitoweb/danilo.pianini/en">Danilo Pianini</a></li>
+<li>Research group: <code>Pervasive Computing</code></li>
+</ul>
+</section><section>
+<h2 id="some-faces-and-topics-we-are-currently-working-on">Some faces and topics we are currently working on</h2>
+<p><img src="./images/group-act.svg" alt=""></p>
+</section><section>
+<h2 id="what-am-i-into">What am I into</h2>
+<p><img src="./images/group-act.svg" alt=""></p>
+<div class="overlay">
+  <div class="circle-1">
+  </div>
+  <div class="circle-2">
+  </div>
+  <div class="circle-3">
+  </div>
+  <div class="circle-4">
+  </div>
+</div>
+
+</section><section>
+<h2 id="industry">Industry</h2>
+<ul>
+<li>
+<p>Active collaboration with the italian industry <code>SCM Group</code> that operates worldwide</p>
+</li>
+<li>
+<p>Project: automation for software updates in the context of industrial woodworking machines</p>
+<p>where:</p>
+<ul>
+<li>heterogeneous devices</li>
+<li>globally distributed devices</li>
+<li>business-critical machines</li>
+</ul>
+</li>
+<li>
+<p>Main skills:</p>
+<ul>
+<li><code>Software updates</code></li>
+<li><code>Autonomous pipelines</code></li>
+<li><code>Containerization</code></li>
+<li><code>Virtualization</code></li>
+<li><code>Hypervisors</code></li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="deployment">Deployment</h2>
+<ul>
+<li>Experimenting ways to easily manage several heterogeneous devices and use their resources</li>
+<li>Two clusters offered to run experiments for both <em>students</em> and <em>researchers</em>:
+<ul>
+<li>AlmaAI cluster</li>
+<li>Area 4.0 cluster</li>
+</ul>
+</li>
+<li><strong>Managed from researchers for researchers</strong></li>
+<li>Main skills:
+<ul>
+<li><code>Container orchestration</code> (<code>Docker</code> and <code>Kubernetes</code>)</li>
+<li><code>Virtualization</code></li>
+<li><code>Network configuration</code></li>
+<li><code>Network file system</code></li>
+<li><code>Clustered storage</code></li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="conceptualization--tools">Conceptualization &amp; Tools</h2>
+<ul>
+<li>
+<p><code>Macroprogramming / Aggregate Computing</code>: Controlling multiple devices/entities at once using <code>space</code> and <code>time</code>.</p>
+<p>Languages, cronologically:</p>
+<ul>
+<li><code>Protelis</code>: stand-alone language, not longer evolved but still maintained.</li>
+<li><code>Scafi</code>: a Scala Domain-Specific Language (DSL)</li>
+<li><code>Collektive</code>: a Kotlin Multi-platform DSL</li>
+</ul>
+</li>
+<li>
+<p><code>BDI Agent-Oriented Programming</code></p>
+<ul>
+<li><code>JaKtA</code>: my master thesis, a Kotlin DSL implementation for modelling <code>BDI</code> agents.</li>
+</ul>
+</li>
+<li>
+<p><code>Simulation</code></p>
+<ul>
+<li><code>Alchemist</code>: a simulator for pervasive computing, inspired from chemistry reactions.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="aggregate-vs-bdi-agents">Aggregate vs BDI Agents</h2>
+<ul>
+<li>
+<p>Same purpose: a way for representing entities adhering to (some) Autonomic Computing principles</p>
+<ul>
+<li>… but different scopes</li>
+</ul>
+</li>
+<li>
+<p><code>Aggregate Computing</code> is for representing elements in the environment which exhibit a <code>collective</code> behaviour.</p>
+</li>
+<li>
+<p><code>BDI Multi-Agent Programming</code> is for representing each entity in an environment using a well-known framework (<code>AgentSpeak(L)</code>), inspired from human mental process.</p>
+<ul>
+<li><strong>This is more my expertise area</strong></li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="conceptualization-strengths">Conceptualization strengths</h2>
+<ul>
+<li></li>
+</ul>
 </section><section>
 <h2 id="context">Context</h2>
 <h4 id="autonomic-computing">Autonomic Computing</h4>
@@ -191,7 +306,7 @@ High maintenance cost!</p>
 </div>
 </div></section><section>
 <h1 id="a-hybrid-approach">A hybrid approach</h1>
-<figure><img src="/acsos-2024-phd-slides/ergonomy.png" width="60%">
+<figure><img src="ergonomy.png" width="60%">
 </figure>
 
 </section><section>
@@ -248,7 +363,7 @@ High maintenance cost!</p>
 </ul>
 </li>
 </ul>
-<figure><img src="/acsos-2024-phd-slides/android-kotlin.png" width="70%">
+<figure><img src="android-kotlin.png" width="70%">
 </figure>
 </div></div>
 </section><section>
