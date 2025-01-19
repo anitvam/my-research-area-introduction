@@ -96,6 +96,13 @@
 </ul>
 </li>
 </ul>
+<br>
+<br>
+<div>
+<small style="text-align: left"> 
+[*] Baiardi M., Ciatto G., Pianini D. - Infrastructures for the Edge-Cloud Continuum on a Small Scale: A Practical Case Study. ACSOS-C 2023
+</small>
+</div>
 </section><section>
 <h2 id="conceptualization--tools">Conceptualization &amp; Tools</h2>
 <ul>
@@ -103,24 +110,35 @@
 <p><code>Macroprogramming / Aggregate Computing</code>: Controlling multiple devices/entities at once using <code>space</code> and <code>time</code>.</p>
 <p>Languages, cronologically:</p>
 <ul>
-<li><code>Protelis</code>: stand-alone language, not longer evolved but still maintained.</li>
-<li><code>Scafi</code>: a Scala Domain-Specific Language (DSL)</li>
-<li><code>Collektive</code>: a Kotlin Multi-platform DSL</li>
+<li><code>Protelis</code>[1]: stand-alone language, not longer evolved but still maintained.</li>
+<li><code>Scafi</code>[2]: a Scala Domain-Specific Language (DSL)</li>
+<li><code>Collektive</code>[3]: a Kotlin Multi-platform DSL</li>
 </ul>
 </li>
 <li>
 <p><code>BDI Agent-Oriented Programming</code></p>
 <ul>
-<li><code>JaKtA</code>: my master thesis, a Kotlin DSL implementation for modelling <code>BDI</code> agents.</li>
+<li><code>JaKtA</code>[4]: my master thesis, a Kotlin DSL implementation for modelling <code>BDI</code> agents.</li>
 </ul>
 </li>
 <li>
 <p><code>Simulation</code></p>
 <ul>
-<li><code>Alchemist</code>: a simulator for pervasive computing, inspired from chemistry reactions.</li>
+<li><code>Alchemist</code>[5]: a simulator for pervasive computing, inspired from chemistry reactions.</li>
 </ul>
 </li>
 </ul>
+<br>
+<br>
+<div>
+<small style="text-align: left">
+<p>[1] <a href="https://github.com/Protelis/Protelis">https://github.com/Protelis/Protelis</a> <br>
+[2] <a href="https://github.com/scafi/scafi">https://github.com/scafi/scafi</a><br>
+[3] <a href="https://github.com/Collektive/collektive">https://github.com/Collektive/collektive</a><br>
+[4] <a href="https://github.com/jakta-bdi/jakta">https://github.com/jakta-bdi/jakta</a><br>
+[5] <a href="https://github.com/AlchemistSimulator/Alchemist">https://github.com/AlchemistSimulator/Alchemist</a><br></p>
+</small>
+</div>
 </section><section>
 <h2 id="aggregate-vs-bdi-agents">Aggregate vs BDI Agents</h2>
 <ul>
@@ -143,39 +161,103 @@
 </section><section>
 <h2 id="conceptualization-strengths">Conceptualization strengths</h2>
 <ul>
-<li></li>
+<li>A good way to describe the problem allows to explore different perspectives of it.</li>
 </ul>
+<p><img src="./images/conceptual%20difference.png" alt=""></p>
 </section><section>
-<h2 id="context">Context</h2>
-<h4 id="autonomic-computing">Autonomic Computing</h4>
-<br>
+<h1 id="aggregate-applications-examples">Aggregate Applications Examples</h1>
+</section><section>
+<h3 id="aggregate-swarm-simulations">Aggregate Swarm simulations</h3>
+<p><img src="https://user-images.githubusercontent.com/23448811/224012578-d375de46-23c3-44e6-99cf-9d937548a1a5.gif" alt="">
+<img src="https://user-images.githubusercontent.com/23448811/224012332-290c81e1-effa-4cab-ae03-c603c116dd99.gif" alt=""></p>
+<div>
+<small style="text-align: left"> 
+<p>[source: <a href="https://github.com/scafi/macro-swarm">https://github.com/scafi/macro-swarm</a>
+]</p>
+</small>
+</div>
+</section><section>
+<h3 id="reinforcement-learning-using-aggregate-models">Reinforcement Learning using Aggregate Models</h3>
 
-<div class="multiCol "><div class="col col-50 "><img src="images/autonomic-diagram.svg" width="100%">
-<div class="mx-5 text-center">
-<h2 id="i-classfa-solid-fa-arrow-upi-mape-k"><em><i class="fa-solid fa-arrow-up"></i> MAPE-K</em></h2>
-<p>Reference <u>model</u> for <em>Autonomic</em> and <em>self-*</em> systems design.</p>
+<div class="multiCol "><div class="col col-50 "><p><img src="./images/gaguzzi-paper.png" alt=""></p>
 </div>
+<div class="col col-50 "><div class="text-center">
+<p><img src="./images/gnn-inside-aggregate.png" alt=""></p>
 </div>
-<div class="col col-50 "><div class="mx-5 text-center">
-<span class="fragment ">
-  <img src="images/bdi-diagram.svg" width="100%">
-<h2 id="i-classfa-solid-fa-arrow-upi-bdi"><em><i class="fa-solid fa-arrow-up"></i> BDI</em></h2>
-<p>Reference <u>framework</u> (<em>AgentSpeak(L)</em>) for <em>Multi-Agent Systems</em>.</p>
-</span>
-</div>
+<ul>
+<li><code>Aggregate</code> is used to enhance agents’ state during reinforcement learning</li>
+<li>The information is obtained through the adoption of a <code>Graph Neural Network</code> in this paper.</li>
+</ul>
 </div></div>
+<small style="text-align: left"> 
+[*] Gianluca Aguzzi, Mirko Viroli, Lukas Esterle: Field-informed Reinforcement Learning of Collective Tasks with Graph Neural Networks. (2023) <br>
+</small>
+</section><section>
+<h3 id="federated-learning-using-aggregate-models">Federated Learning using Aggregate Models</h3>
 
-
-<span class="fragment ">
-  <div class="position-absolute">
-<iframe src="https://giphy.com/embed/g01ZnwAUvutuK8GIQn" width="100%" height="100%" frameborder="0" class="fixed-top" allowfullscreen=""></iframe>
-<div class="fixed-top " style="color:white">
-<h2 style="color:white"> Why isn't BDI common in autonomic loops? </h2>
+<div class="multiCol "><div class="col col-50 "><div class="text-center">
+<p><img src="./images/federated-learning-aggregate.png" alt=""></p>
 </div>
 </div>
+<div class="col col-50 "><ul>
+<li><code>Aggregate</code> is used to distribute the computation</li>
+<li>I don’t know a lot of details, this is a work in progress…</li>
+</ul>
+</div></div>
+</section><section>
+<h1 id="how-do-i-choose-among-these-representation">How do I choose among these representation?</h1>
+<h2 id="lets-start-from-an-example">Let’s start from an example</h2>
+</section><section>
+<h2 id="distributed-applications">Distributed Applications</h2>
+<h4 id="running-on-unknown-network-topologies">Running on unknown network topologies</h4>
+<br>
+<figure><img src="images/path2.svg" width="50%">
+</figure>
 
-</span>
+</section><section>
+<h4 id="may-be-subject-to-unpredictable-connectivity-failures">May be subject to unpredictable connectivity failures</h4>
+<br>
+<figure><img src="images/path2-6.svg" width="50%">
+</figure>
 
+</section><section>
+<h4 id="we-need-autonomous-entities-brcapable-to-adapt-their-behaviour-to-the-failure-brand-continue-to-work-as-expected">We need <em>autonomous</em> entities <br>capable to <em>adapt</em> their behaviour to the failure <br>and continue to work as expected</h4>
+<br>
+<figure><img src="images/path2-6-1.svg" width="50%">
+</figure>
+
+</section><section>
+<h2 id="here-lies-the-first-difference"><em>Here lies the first difference</em></h2>
+<p>Viewing system interactions in terms of:</p>
+
+<div class="multiCol "><div class="col col-50 text-center"><p>information propagating through <br> collectives of devices</p>
+<p><i class="fa-solid fa-arrow-down"></i></p>
+<p><code>Aggregate Computing</code></p>
+</div>
+<div class="col col-50 text-center"><p>individual devices with different interactions <br> with their peers in the environment</p>
+<p><i class="fa-solid fa-arrow-down"></i></p>
+<p><code>Multi-Agent Systems</code></p>
+</div></div>
+</section><section>
+<h2 id="agents">Agents</h2>
+<br>
+<figure><img src="images/path43-7.svg" width="50%">
+</figure>
+
+</section><section>
+<h1 id="agent-oriented-programming">Agent-Oriented Programming</h1>
+<br>
+<figure><img src="images/rect46.svg" width="50%">
+</figure>
+
+<p><small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small></p>
+</section><section>
+<h1 id="agent-oriented-programming-1">Agent-Oriented Programming</h1>
+<br>
+<figure><img src="images/BDIAgents.svg" width="50%">
+</figure>
+
+<p><small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small></p>
 </section><section>
 <h1 id="bdi">BDI?</h1>
 <h2 id="beliefs-desires-intentions">Beliefs, Desires, Intentions</h2>
@@ -197,218 +279,152 @@
 <div>
 <br>
 <small style="text-align: left"> 
---- <br>
 [1] Bratman, Michael. "Intention, plans, and practical reason." (1987) <br>
 [2] Anand S. Rao and Michael P. Georgeff. "BDI agents: From theory to practice." (1995) <br>
 [3] Anand S. Rao. "Agentspeak(l): BDI agents speak out in a logical computable language." (1996) 
 </small>
 </div>
 </section><section>
-<h2 id="agentspeakl-under-the-hood">AgentSpeak(L) under the hood…</h2>
-<img src="images/architecture.png" width="50%">
+<h1 id="agentspeakl">AgentSpeak(L)</h1>
+<figure><img src="images/Interpreting-AgentSpeakL-Programs.png" width="50%">
+</figure>
+
 </section><section>
-<h1 id="mape-k-vs-bdi-key-differences">MAPE-K vs. BDI: Key differences</h1>
-<h3 id="conceptual-vs-practical">Conceptual vs. practical</h3>
-<ul>
-<li><strong>MAPE-K</strong> defines a conceptual model, needs application-specific implementations
-<ul>
-<li>favors ad-hoc implementations</li>
-</ul>
-</li>
-<li><strong>BDI</strong> is typically reified into a practical tool (a language or library)
-<ul>
-<li>enforces commitment to a technology</li>
-</ul>
-</li>
-</ul>
-<h3 id="architectural-vs-formal">Architectural vs. formal</h3>
-<ul>
-<li><strong>MAPE-K</strong> defines a reasoning architecture and a loop scheme</li>
-<li><strong>BDI</strong> has been formalised into AgentSpeak(L)
-<ul>
-<li>Typical implementations adhere to the formal specification</li>
-</ul>
-</li>
-</ul>
-<h3 id="simple-vs-complex">Simple vs. complex</h3>
-<ul>
-<li><strong>MAPE-K</strong> is simpler
-<ul>
-<li>can be implemented on a per-application basis</li>
-</ul>
-</li>
-<li><strong>BDI</strong> requires complex matching ad plan-selection algorithms
-<ul>
-<li>hard to build from scratch in a custom fashion</li>
-</ul>
-</li>
-</ul>
-</section><section>
-<h1 id="bdi-agent-programming-languages">BDI Agent Programming Languages</h1>
+<!-- # BDI Agent Programming Languages
 
+<br />
 
-<span class="fragment ">
-  <h3 id="-some-of-them">… some of them</h3>
-
-</span>
-
-<br>
 <figure><img src="images/AOPlang.svg" width="50%">
 </figure>
 
-<br>
+
+<br />
+
 <div>
 <small style="text-align: left"> 
-[1] Collier, R.W., Russell, S.E., Lillis, D.. "Reflecting on agent programming with AgentSpeak(L). I" (2015) <br>
-[2] Hindriks, K.V.. "Programming rational agents in GOAL." (2009) <br>
-[3] Pokahr, A., Braubach, L., Lamersdorf, W.. "Jadex: A BDI reasoning engine." (2005) <br>
-[4] Bordini, R.H., Hübner, J.F., Wooldridge, M.J.. "Programming Multi-Agent Systems in AgentSpeak using Jason." (2007) <br>
-[5] D’Urso, F., Longo, C.F., Santoro, C.. "Programming intelligent iot systems with a python-based declarative tool." (2019) <br>
+[1] Collier, R.W., Russell, S.E., Lillis, D.. "Reflecting on agent programming with AgentSpeak(L). I" (2015) <br />
+[2] Hindriks, K.V.. "Programming rational agents in GOAL." (2009) <br />
+[3] Pokahr, A., Braubach, L., Lamersdorf, W.. "Jadex: A BDI reasoning engine." (2005) <br />
+[4] Bordini, R.H., Hübner, J.F., Wooldridge, M.J.. "Programming Multi-Agent Systems in AgentSpeak using Jason." (2007) <br />
+[5] D’Urso, F., Longo, C.F., Santoro, C.. "Programming intelligent iot systems with a python-based declarative tool." (2019) <br />
 [6] Palanca, J., Rincon, J.A., Carrascosa, C., Julián, V., Terrasa, A.. "A flexible agent architecture in SPADE." (2022)
 </small>
-</div>
-</section><section>
-<h1 id="majority-of-bdi-tools-libraries">Majority of BDI tools: Libraries</h1>
-<br>
+</div> 
+
+---
+
+## Jakta: multi-paradigm AOP/BDI+OOP+FP
+
+
+```kotlin
+mas {                                                   // BDI specification
+  fun allPlayers(team: String) =
+    Regex("""<a\s(\X*?)\sdata-cy="player">(.*)<\/a>""") // Object-oriented regex library
+        .findAll(URL("https://www.besoccer.com/team/squad/$team").readText())
+        .map { team to it.groupValues[2] }              // Lambda expression (Functional style)
+
+  listOf("napoli", "milan", "internazionale")           // Kotlin standard library
+      .flatMap(::allPlayers)                            // Higher-order function (Functional style)
+      .forEach { (team, player) ->                      // Destructuring declaration
+          agent(player) {
+              beliefs { fact { squad(team) } }
+              goals { achieve(start) }
+              plans {
+                  +achieve(start) onlyIf { squad(S).fromSelf } then {
+                      execute(print("Hello! I play for", S))
+                  }
+              }
+          }
+      }
+}.start()
+```
+
+<i class="fa-solid fa-file-code"></i> [SoccerMas.kt](https://github.com/jakta-bdi/jakta-examples/blob/main/src/main/kotlin/it/unibo/jakta/agents/examples/soccer/SoccerMas.kt) 
+
+---
+-->
+<h1 id="simplified">…Simplified</h1>
+<h2 id="a-lot-of-similarities-with-autonomic-computing-mape-k-cycle">A lot of similarities with Autonomic Computing MAPE-K cycle</h2>
 <br>
 
-<div class="multiCol text-center"><div class="col col-50 col-75">
-<ul>
-<li>Built for mainstream languages</li>
-<li>Subject to the <em>syntactic restrictions</em> of their host language
-<ul>
-<li>“True” AOP/BDI feeling hardly achieved</li>
-</ul>
-</li>
-</ul>
+<div class="multiCol "><div class="col col-50 "><img src="images/autonomic-diagram.svg" width="100%">
+<div class="mx-5 text-center">
+<h2 id="i-classfa-solid-fa-arrow-upi-mape-k"><em><i class="fa-solid fa-arrow-up"></i> MAPE-K</em></h2>
+<p>Reference <u>model</u> for <em>Autonomic</em> and <em>self-*</em> systems design.</p>
 </div>
-<div class="col col-50 col-25">
-<span class="fragment ">
-<h2 id="i-classfa-solid-fa-arrow-righti-custom-language"><i class="fa-solid fa-arrow-right"></i> <em>custom language</em></h2>
-</span>
-</div> </div>
-</section><section>
-<h1 id="aop-custom-languages">AOP Custom Languages</h1>
-<div>
-<div class=" w-50 m-auto text-right" style="text-align: left">
-<p><i class="fa-solid fa-check" style="color: green; margin-right: 10px"></i>
-Great ergonomy for BDI AOP (made by purpose)</p>
-<p><i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-BDI-specific, not multi-paradigm</p>
-<p><i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-Steep learning curve</p>
-<p><i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-Require custom tooling - IDEs, code suggestions, syntax highlighters, linters…</p>
-<p><i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-Small community</p>
-<p><i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-High maintenance cost!</p>
 </div>
-</div></section><section>
-<h1 id="a-hybrid-approach">A hybrid approach</h1>
-<figure><img src="ergonomy.png" width="60%">
-</figure>
-
-</section><section>
-<h1 id="jakta-br-ujauson-like-ukuoutulin-uaugents-1">JaKtA: <br> <u>Ja</u>son-like <u>K</u>o<u>t</u>lin <u>A</u>gents [1]</h1>
-<p>Internal Domain-Specific Language (DSL) implemented in Kotlin</p>
-<ul>
-<li>Multi-paradigm support: OOP + FP + BDI AOP</li>
-<li>Hosted on a mainstream language: gentle learning curve
-<ul>
-<li>Great learning resources for Kotlin</li>
-<li>Significantly large community for help</li>
-</ul>
-</li>
-<li>Reuses the entire existing Kotlin toolchain
-<ul>
-<li>Developed and <em>maintained</em> by the language maintainers and the community</li>
-<li>Maintenance is greatly reduced</li>
-</ul>
-</li>
-<li>Good ergonomy</li>
-</ul>
-<br>
-<br>
+<div class="col col-50 "><div class="mx-5 text-center">
+<img src="images/bdi-diagram.svg" width="100%">
+<h2 id="i-classfa-solid-fa-arrow-upi-bdi"><em><i class="fa-solid fa-arrow-up"></i> BDI</em></h2>
+<p>Reference <u>framework</u> (<em>AgentSpeak(L)</em>) for <em>Multi-Agent Systems</em>.</p>
+</div>
+</div></div>
 <div>
 <small style="text-align: left"> 
----<br>
-[1] Baiardi, M., Burattini, S., Ciatto, G., &amp; Pianini, D. (2023, September). JaKtA: BDI Agent-Oriented Programming in Pure Kotlin. 
+[*] Baiardi M. - Supporting Autonomic Computing via BDI Tooling. ACSOS-C 2024
 </small>
 </div>
 </section><section>
-<h1 id="why-kotlin">Why kotlin?</h1>
-<br>
+<!-- 
+# MAPE-K vs. BDI: Key differences
 
-<div class="multiCol "><div class="col col-50 "><ul>
-<li>Natively multi-paradigm (OOP + FP)</li>
-<li>Statically typed
-<ul>
-<li>With a good IDE, helps understanding what can be written where</li>
-</ul>
-</li>
-<li>Direct support to internal DSLs
-<ul>
-<li>a.k.a “Type-safe builders” in the Kotlin documentation</li>
-</ul>
-</li>
-<li>Support for multiplatform development</li>
-</ul>
-</div>
-<div class="col col-50 text-center">
-<ul>
-<li>Growing community
-<ul>
-<li>Strongly pushed by Google for Android</li>
-</ul>
-</li>
-</ul>
-<figure><img src="android-kotlin.png" width="70%">
-</figure>
-</div></div>
-</section><section>
-<h2 id="jakta-multi-paradigm-aopbdioopfp">Jakta: multi-paradigm AOP/BDI+OOP+FP</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#000">mas</span> <span style="color:#000;font-weight:bold">{</span>                                                   <span style="color:#8f5902;font-style:italic">// BDI specification
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>  <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">allPlayers</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">team</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">=</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">Regex</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">"""&lt;a\s(\X*?)\sdata-cy="player"&gt;(.*)&lt;\/a&gt;"""</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#8f5902;font-style:italic">// Object-oriented regex library
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000;font-weight:bold">.</span><span style="color:#000">findAll</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">URL</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">"https://www.besoccer.com/team/squad/</span><span style="color:#4e9a06">$team</span><span style="color:#4e9a06">"</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">readText</span><span style="color:#000;font-weight:bold">())</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">.</span><span style="color:#000">map</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">team</span> <span style="color:#000">to</span> <span style="color:#204a87;font-weight:bold">it</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">groupValues</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">}</span>              <span style="color:#8f5902;font-style:italic">// Lambda expression (Functional style)
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">listOf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">"napoli"</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">"milan"</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">"internazionale"</span><span style="color:#000;font-weight:bold">)</span>           <span style="color:#8f5902;font-style:italic">// Kotlin standard library
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#000">flatMap</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">allPlayers</span><span style="color:#000;font-weight:bold">)</span>                            <span style="color:#8f5902;font-style:italic">// Higher-order function (Functional style)
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>      <span style="color:#000;font-weight:bold">.</span><span style="color:#000">forEach</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">team</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">player</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span>                      <span style="color:#8f5902;font-style:italic">// Destructuring declaration
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>          <span style="color:#000">agent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">player</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#000">beliefs</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">fact</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">squad</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">team</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#000">goals</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">achieve</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">start</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#000">plans</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                  <span style="color:#000;font-weight:bold">+</span><span style="color:#000">achieve</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">start</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000">onlyIf</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">squad</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">fromSelf</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#000">then</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>                      <span style="color:#000">execute</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">print</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">"Hello! I play for"</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">S</span><span style="color:#000;font-weight:bold">))</span>
-</span></span><span style="display:flex;"><span>                  <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}.</span><span style="color:#000">start</span><span style="color:#000;font-weight:bold">()</span>
-</span></span></code></pre></div></section><section>
-<h2 id="future-work">Future work</h2>
-<p>JaKtA is still in its early stages, in the future we plan to:</p>
-<ul>
-<li>Provide stable tools to emulate dynamic environments (<strong>Simulation</strong>)
-<ul>
-<li>Validate the integration with an application, e.g.: drone swarm coordination (<strong>Use case</strong>)</li>
-</ul>
-</li>
-<li>Expose BDI abstractions within the debugger for helping bug inspection (<strong>Debug</strong>)</li>
-<li>Use BDI abstractions in small fragments of non-BDI programs (<strong>Bidirectional paradigm blending</strong>)
-<ul>
-<li>(we can already use fragments of functional and OOP inside a BDI program)</li>
-</ul>
-</li>
-</ul>
-</section><section>
-<h1 id="try-jakta">try jakta</h1>
+### Conceptual vs. practical
+
+* **MAPE-K** defines a conceptual model, needs application-specific implementations
+    * favors ad-hoc implementations
+* **BDI** is typically reified into a practical tool (a language or library)
+    * enforces commitment to a technology
+
+### Architectural vs. formal
+
+* **MAPE-K** defines a reasoning architecture and a loop scheme
+* **BDI** has been formalised into AgentSpeak(L)
+    * Typical implementations adhere to the formal specification
+
+### Simple vs. complex
+
+* **MAPE-K** is simpler
+    * can be implemented on a per-application basis
+* **BDI** requires complex matching ad plan-selection algorithms
+    * hard to build from scratch in a custom fashion
+
+--- -->
+<h1 id="current-project">Current project:</h1>
+<h1 id="jakta"><em>JaKtA</em></h1>
 <br>
-<p><a href="https://github.com/jakta-bdi/jakta-examples">github.com/jakta-bdi/jakta-examples</a></p>
-<img src="images/qr-code.svg" width="20%">
+<div>
+<small style="text-align: left"> 
+[*] Baiardi, M., Burattini, S., Ciatto, G., &amp; Pianini, D. - Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN Comput. Sci. 5(8): 1003 (2024)
+</small>
+</div>
+</section><section>
+<h2 id="jakta-1">Jakta</h2>
+<ul>
+<li><strong>For software engineers</strong>: Multi-paradigm AOP/BDI+OOP+FP BDI Multi-Agent Systems programming framework</li>
+<li><strong>For research</strong>: Using a single tool to express several types of Distributed systems</li>
+<li><strong>Key features</strong>: flexibility <i class="fa-solid fa-arrow-right"></i> it allows to plug-in other tools (for example <code>simulation</code>)</li>
+</ul>
+</section><section>
+<h2 id="still-a-work-in-progress">Still a work in progress</h2>
+<ul>
+<li>It currently offer a framework for BDI agents using a <code>Prolog</code> DSL</li>
+<li>Allows the execution of simulation through the <code>Alchemist</code> tool</li>
+</ul>
+<br>
+<br>
+<h2 id="in-the-future-">In the future …</h2>
+<ul>
+<li>I am <strong>currently</strong> working on a new version of the tool
+<ul>
+<li>to model simplest agents than the AgentSpeak(L) notion (towards MAPE-K)</li>
+<li>to simplify the modularity of the tool</li>
+<li>to let agents adopt <code>aggregate plans</code> … seamlessly :)</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h1 id="collaboration-with-cau">Collaboration with CAU</h1>
+<h3 id="tbd">TBD</h3>
 </section>
 
   
