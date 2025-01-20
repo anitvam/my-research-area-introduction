@@ -205,14 +205,40 @@
 <h3 id="federated-learning-using-aggregate-models">Federated Learning using Aggregate Models</h3>
 
 <div class="multiCol "><div class="col col-50 "><div class="text-center">
-<p><img src="./images/federated-learning-aggregate.png" alt=""></p>
+<p><img src="./images/federated-learning-aggregate.png" alt="">
+<img src="./images/csm_federated-learning_01_2dea2cd6c5.png" width="50%"></p>
 </div>
+<div class="multiCol "><div class="col col-50 "><div class="text-center">
+<p><img src="images/scr1.png" alt="">
+<img src="images/scr2.png" alt="">
+<img src="images/scr3.png" alt=""></p>
+</div>
+</div> </div>
 </div>
 <div class="col col-50 "><ul>
-<li><code>Aggregate</code> is used to distribute the computation</li>
-<li>I don’t know a lot of details, this is a work in progress…</li>
+<li>
+<p>The aim is to overcome limitations of traditional federated learning models, where</p>
+<ul>
+<li>Clustering is performed by the central server</li>
+<li>No. of cluster predefined</li>
+<li>Central server is a Single-Point of failure</li>
+</ul>
+</li>
+<li>
+<p><code>Aggregate</code> improves the model of the network adopting <code>Self-Coordination Regions</code> (SCR)</p>
+<ul>
+<li>Re-election of the leader in case of failure</li>
+<li>Regions are selected on similarity metrics, no pre-defined clustering</li>
+</ul>
+</li>
 </ul>
 </div></div>
+<div>
+<small>
+[*] D. Domini, G. Aguzzi, N. Farabegoli, M. Viroli and L. Esterle, "Proximity-based Self-Federated Learning," 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Aarhus, Denmark, 2024 <br>
+[*] Domini, D., Aguzzi, G., Esterle, L., Viroli, M. (2024). Field-Based Coordination for Federated Learning. In: Castellani, I., Tiezzi, F. (eds) Coordination Models and Languages. COORDINATION 2024
+</small>
+</div>
 </section><section>
 <h1 id="how-do-i-choose-among-these-representation">How do I choose among these representation?</h1>
 <h2 id="lets-start-from-an-example">Let’s start from an example</h2>
