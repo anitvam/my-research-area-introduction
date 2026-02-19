@@ -10,7 +10,7 @@ outputs = ["Reveal"]
 
 # Brief introduction
 
-- 2nd year PhD Student from `University of Bologna` (`UNIBO`)
+- 3rd year PhD Student from `University of Bologna` (`UNIBO`)
 - Supervisor: 
 ![](https://www.unibo.it/uniboweb/utils/UserImage.aspx?IdAnagrafica=503326&IdFoto=e1c80103) [Danilo Pianini](https://www.unibo.it/sitoweb/danilo.pianini/en)
 - Research group context: `Pervasive Computing`
@@ -123,15 +123,39 @@ outputs = ["Reveal"]
 
 ---
 
-## Aggregate vs BDI Agents
+## Aggregate System vs Multi-Agent Systems
 
 - Same purpose: a way for representing entities adhering to (some) Autonomic Computing principles
   - ... but different scopes
 
 - `Aggregate Computing` is for representing elements in the environment which exhibit a `collective` behaviour.
 
-- `BDI Multi-Agent Programming` is for representing each entity in an environment using a well-known framework (`AgentSpeak(L)`), inspired from human mental process.
-  - **This is more my expertise area**
+- `Multi-Agent Programming` is for representing each entity decision process in an environment.
+
+---
+
+
+## *Here lies the difference*
+
+Viewing system interactions in terms of:
+
+{{% multicol  %}}{{% col class="text-center" %}}
+
+information propagating through <br/> collectives of devices
+
+<i class="fa-solid fa-arrow-down"></i>
+
+`Aggregate Computing`
+
+{{% /col %}}{{% col class="text-center" %}}
+
+individual devices with different interactions <br/> with their peers in the environment
+
+<i class="fa-solid fa-arrow-down"></i>
+
+`Multi-Agent Systems`
+
+{{% /col %}}{{% /multicol %}}
 
 ---
 
@@ -164,7 +188,7 @@ outputs = ["Reveal"]
 
 ---
 
-### Reinforcement Learning using Aggregate Models
+## Reinforcement Learning using Aggregate Models
 
 {{% multicol %}}{{% col %}}
 
@@ -192,7 +216,7 @@ outputs = ["Reveal"]
 </small>
 
 ---
-
+<!-- 
 ### Federated Learning using Aggregate Models
 
 {{% multicol %}}{{% col %}}
@@ -242,13 +266,91 @@ outputs = ["Reveal"]
 </div>
 
  ---
+-->
 
+## Project Emerge   
 
-# How do I choose among these representation?
-## Let's start from an example
+{{% multicol %}}{{% col %}} 
+
+### @ European Researcher's Night 2025
+
+The project involved robots that autonomously locate themselves in a common pattern by using aggregate computing. 
+
+The robots know their position in the space thanks to an `Aruco marker`, and they use the `Collektive` library to compute their position in the chosen pattern and move accordingly.
+
+![alt text](<images/Aggregate Runtime and-2026-02-19-194841.svg>)
+
+{{% /col %}}{{% col class="text-center" %}}
+
+![alt text](images/IMG_8654.gif)
+
+{{% /col %}}{{% /multicol %}}
+
+<div>
+<small>
+Aguzzi, G. et al. (2025). A Demonstrator for Self-organizing Robot Teams. In: Di Giusto, C., Ravara, A. (eds) Coordination Models and Languages. COORDINATION 2025. Lecture Notes in Computer Science, vol 15731. Springer, Cham. https://doi.org/10.1007/978-3-031-95589-1_12
+</small>
+</div>
 
 ---
 
+
+## Adaptive Relay Network Using Aggregate Computing
+
+{{% multicol %}}{{% col %}} 
+### @ ACSOS 2025
+
+- To enable autonomous navigation there is the need for real-time high-quality information
+- To observe the full-picture, data needs to be collected from central points (i.e. shore stations)
+- High-fidelity data are collected locally by ships, then summarised at strategic points within the network and finally forwarded toward the land station
+
+<div class="text-center">
+  <img src="images/csc.svg" width="40%" />
+</div>
+
+{{% /col %}}{{% col class="text-center" %}}
+
+![alt text](images/simulation.gif)
+
+{{% /col %}}{{% /multicol %}}
+
+<div>
+<small>
+M. Baiardi, D. Pianini, G. Al-Falouji and S. Tomforde, "Robust Communication Through Collective Adaptive Relay Schemes for Maritime Vessels," 2025 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Tokyo, Japan, 2025, pp. 21-32, doi: 10.1109/ACSOS66086.2025.00019.
+</small>
+</div>
+
+---
+
+## Runtime replanning for robot missions
+
+{{% multicol %}}{{% col %}}
+
+### @ ACSOS 2025
+- Robots are deployed in the field to perform a mission, but they may be subject to unpredictable connectivity failures
+- They perform tasks distributed in the environment
+- They share their *state* and *tasks* using gossiping distributed consesus through aggregate computing
+- They recompute their plan thanks to the shared information to optimise the mission execution
+
+<div class="text-center">
+<img src="images/idea.svg" width="70%" />
+</div>
+
+{{% /col %}}{{% col class="text-center" %}}
+
+<img src="images/replanning.gif" width="100%" />
+
+{{% /col %}}{{% /multicol %}}
+
+<div>
+<small>
+G. Aguzzi et al., "A Field-Based Approach for Runtime Replanning in Swarm Robotics Missions," 2025 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Tokyo, Japan, 2025, pp. 1-10, doi: 10.1109/ACSOS66086.2025.00017.
+</small>
+</div>  
+
+---
+
+<!--
 ## Distributed Applications
 #### Running on unknown network topologies
 
@@ -256,7 +358,7 @@ outputs = ["Reveal"]
 
 {{< figure src="images/path2.svg" width="50%" >}}
 
----
+ ---
 
 #### May be subject to unpredictable connectivity failures
 
@@ -269,41 +371,25 @@ outputs = ["Reveal"]
 #### We need *autonomous* entities <br/>capable to *adapt* their behaviour to the failure <br/>and continue to work as expected 
 <br />
 
-{{< figure src="images/path2-6-1.svg" width="50%" >}}
+{{< figure src="images/path2-6-1.svg" width="50%" >}} 
 
 ---
 
-## *Here lies the first difference*
+-->
 
-Viewing system interactions in terms of:
 
-{{% multicol  %}}{{% col class="text-center" %}}
-
-information propagating through <br/> collectives of devices
-
-<i class="fa-solid fa-arrow-down"></i>
-
-`Aggregate Computing`
-
-{{% /col %}}{{% col class="text-center" %}}
-
-individual devices with different interactions <br/> with their peers in the environment
-
-<i class="fa-solid fa-arrow-down"></i>
-
-`Multi-Agent Systems`
-
-{{% /col %}}{{% /multicol %}}
+# My research project 
+## BDI Multi-Agent Systems
 
 ---
 
-## Agents
+## BDI Multi-Agent Systems
 
 <br />
 
 {{< figure src="images/path43-7.svg" width="50%" >}}
 
----
+<!-- ---
 
 # Agent-Oriented Programming
 
@@ -323,21 +409,30 @@ individual devices with different interactions <br/> with their peers in the env
 {{< figure src="images/BDIAgents.svg" width="50%" >}}
 
 <small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small>
+-->
+
+--- 
+
+## BDI Multi-Agent Systems
+
+- System’s description through Goals
+    - Imperative Paradigm and Functional Paradigm are suboptimal to do so
+    - Huge abstraction gap between instruction and notion representation
+- BDI tries to minimise this gap in the abstraction
+    - Mimicking human-level notions
+
+<div>
+<br/>
+<small> 
+Bratman, Michael. "Intention, plans, and practical reason." (1987) <br />
+</small>
+</div>
 
 ---
-
 
 # BDI?
 
 ## Beliefs, Desires, Intentions
-
-<br />
-
-- It's a framework to model Multi-Agent Systems through *Goals*
-- Reduces the *abstraction gap* between *cognitive abstractions* and the abstractions of common paradigms
-  - Mimicking human-level notions such as *beliefs*, *desires* and *intentions*
-
-### three main abstractions:
 
 - *Beliefs*: mental state of the agent, that changes over time.
 - *Desires*: motivational state of the system.
@@ -346,14 +441,10 @@ individual devices with different interactions <br/> with their peers in the env
 <div>
 <br />
 
-<small style="text-align: left"> 
-[1] Bratman, Michael. "Intention, plans, and practical reason." (1987) <br />
-[2] Anand S. Rao and Michael P. Georgeff. "BDI agents: From theory to practice." (1995) <br />
-[3] Anand S. Rao. "Agentspeak(l): BDI agents speak out in a logical computable language." (1996) 
+<small> 
+Anand S. Rao and Michael P. Georgeff. "BDI agents: From theory to practice." (1995) <br />
 </small>
 </div>
-
-
 
 ---
 
@@ -362,6 +453,11 @@ individual devices with different interactions <br/> with their peers in the env
 
 {{< figure src="images/Interpreting-AgentSpeakL-Programs.png" width="50%" >}}
 
+<div>
+<small>
+Anand S. Rao. "Agentspeak(L): BDI agents speak out in a logical computable language." (1996) 
+</small>
+</div>
 
 ---
 
@@ -418,7 +514,7 @@ mas {                                                   // BDI specification
 -->
 
 # ...Simplified
-## A lot of similarities with Autonomic Computing MAPE-K cycle
+## An Autonomic Computing MAPE-K cycle
 
 <br/>
 
@@ -448,8 +544,8 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 {{% /col %}}{{% /multicol %}}
 
 <div>
-<small style="text-align: left"> 
-[*] Baiardi M. - Supporting Autonomic Computing via BDI Tooling. ACSOS-C 2024
+<small> 
+Baiardi M. - Supporting Autonomic Computing via BDI Tooling. ACSOS-C 2024
 </small>
 </div>
 
@@ -479,21 +575,33 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 
 --- -->
 
+{{% multicol %}}{{% col class="text-center" %}}
+
+
 # Current project: 
 # *JaKtA*
 
+{{% /col %}}{{% col %}}
+
+<img src="images/jakta_website.png" width="100%" />
+
+{{% /col %}}{{% /multicol %}}
 <br />
 
 <div>
-<small style="text-align: left"> 
-[*] Baiardi, M., Burattini, S., Ciatto, G., & Pianini, D. - Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN Comput. Sci. 5(8): 1003 (2024)
+<small> 
+Baiardi, M., Burattini, S., Ciatto, G., & Pianini, D. - Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN Comput. Sci. 5(8): 1003 (2024)
 
 </small>
 </div>
 
 ---
 
-## Jakta
+<img src="images/Ergonomy.png" width="100%" />
+
+---
+
+## JaKtA: *JA*son-like *K*o*T*lin *A*gents
 
 - **For software engineers**: Multi-paradigm AOP/BDI+OOP+FP BDI Multi-Agent Systems programming framework
 - **For research**: Using a single tool to express several types of Distributed systems
@@ -501,25 +609,63 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 
 ---
 
+## Simulation as a validation tool for BDI agents
+
+{{% multicol %}}{{% col class="text-center" %}}
+
+- Same code executed in the real deployment and in the simulation
+- We identify multiple event granularity mappings between BDI events and DES Simulation events
+   - `Atomic MAS Advancements`
+   - `Atomic Control-Loop Iterations`
+   - `Atomic Control-Loop Phase`
+   - `Atomic BDI Event`
+
+<br />
+<br />
+
+### Accepted yesterday at JAAMAS!
+
+{{% /col %}}{{% col class="text-center" %}}
+
+<img src="images/samusversion.svg" width="100%" >
+
+{{% /col %}}{{% /multicol %}}
+
+<div>
+<small>
+M. Baiardi, "Validation of BDI MASs via Simulation," 2024 28th International Symposium on Distributed Simulation and Real Time Applications (DS-RT), Urbino, Italy, 2024, pp. 128-129, doi: 10.1109/DS-RT62209.2024.00029.
+</small>
+</div>
+
+
+---
+
+## Generic BDI tool for Multi-Agent Systems
+
+<img src="images/generic_bdi.png" width="100%" />
+
+<div>
+<small>
+Burattini, S., Baiardi, M., Ciatto, G., & Pianini, D. (2025). The Gap Between BDI Agents and Semantic Hypermedia and What We Can Do About It. In CEUR WORKSHOP PROCEEDINGS (Vol. 4084, pp. 18-27). CEUR-WS.
+</small>
+</div>
+
+---
+
 ## Still a work in progress
 
-- It currently offer a framework for BDI agents using a `Prolog` DSL
-- Allows the execution of simulation through the `Alchemist` tool
-
-<br />
-<br />
-
-
-## In the future ...
-
 - I am **currently** working on a new version of the tool 
-  - to model simplest agents than the AgentSpeak(L) notion (towards MAPE-K)
-  - to simplify the modularity of the tool
-  - to let agents adopt `aggregate plans` ... seamlessly :)  
+  - Abstracting the knowledge representation
+  - Multi-platform supprot (JVM, JavaScript, Native)
+  - Efficient implementation using coroutines
+  - ...and to let agents adopt `aggregated computation` seamlessly 
 
----
 
-# Collaboration with CAU
- 
----
+<br />
+<br />
 
+<div>
+<small>
+M. Baiardi, "Cognitive Agents in the Field: A Hybrid Approach Between Agent-Oriented and Aggregate Computation," 2025 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Tokyo, Japan, 2025, pp. 176-178, doi: 10.1109/ACSOS-C66519.2025.00050.
+</small>
+</div>
