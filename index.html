@@ -14,8 +14,8 @@
 <link href="https://fonts.googleapis.com/css?family=Oxygen Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu Mono" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/81ac037be0.js" crossorigin="anonymous"></script>
 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   <body>
     
@@ -28,7 +28,7 @@
 </section><section>
 <h1 id="brief-introduction">Brief introduction</h1>
 <ul>
-<li>2nd year PhD Student from <code>University of Bologna</code> (<code>UNIBO</code>)</li>
+<li>3rd year PhD Student from <code>University of Bologna</code> (<code>UNIBO</code>)</li>
 <li>Supervisor:
 <img src="https://www.unibo.it/uniboweb/utils/UserImage.aspx?IdAnagrafica=503326&amp;IdFoto=e1c80103" alt=""> <a href="https://www.unibo.it/sitoweb/danilo.pianini/en">Danilo Pianini</a></li>
 <li>Research group context: <code>Pervasive Computing</code></li>
@@ -149,7 +149,7 @@
 </small>
 </div>
 </section><section>
-<h2 id="aggregate-vs-bdi-agents">Aggregate vs BDI Agents</h2>
+<h2 id="aggregate-system-vs-multi-agent-systems">Aggregate System vs Multi-Agent Systems</h2>
 <ul>
 <li>
 <p>Same purpose: a way for representing entities adhering to (some) Autonomic Computing principles</p>
@@ -161,12 +161,21 @@
 <p><code>Aggregate Computing</code> is for representing elements in the environment which exhibit a <code>collective</code> behaviour.</p>
 </li>
 <li>
-<p><code>BDI Multi-Agent Programming</code> is for representing each entity in an environment using a well-known framework (<code>AgentSpeak(L)</code>), inspired from human mental process.</p>
-<ul>
-<li><strong>This is more my expertise area</strong></li>
-</ul>
+<p><code>Multi-Agent Programming</code> is for representing each entity decision process in an environment.</p>
 </li>
 </ul>
+</section><section>
+<h2 id="here-lies-the-difference"><em>Here lies the difference</em></h2>
+<p>Viewing system interactions in terms of:</p>
+
+<div class="multiCol "><div class="col col-50 text-center"><p>information propagating through <br> collectives of devices</p>
+<p><i class="fa-solid fa-arrow-down"></i></p>
+<p><code>Aggregate Computing</code></p>
+</div>
+<div class="col col-50 text-center"><p>individual devices with different interactions <br> with their peers in the environment</p>
+<p><i class="fa-solid fa-arrow-down"></i></p>
+<p><code>Multi-Agent Systems</code></p>
+</div></div>
 </section><section>
 <h2 id="conceptualization-strengths">Conceptualization strengths</h2>
 <ul>
@@ -186,7 +195,7 @@
 </small>
 </div>
 </section><section>
-<h3 id="reinforcement-learning-using-aggregate-models">Reinforcement Learning using Aggregate Models</h3>
+<h2 id="reinforcement-learning-using-aggregate-models">Reinforcement Learning using Aggregate Models</h2>
 
 <div class="multiCol "><div class="col col-50 "><p><img src="./images/gaguzzi-paper.png" alt=""></p>
 </div>
@@ -202,20 +211,22 @@
 [*] Gianluca Aguzzi, Mirko Viroli, Lukas Esterle: Field-informed Reinforcement Learning of Collective Tasks with Graph Neural Networks. (2023) <br>
 </small>
 </section><section>
-<h3 id="federated-learning-using-aggregate-models">Federated Learning using Aggregate Models</h3>
+<!-- 
+### Federated Learning using Aggregate Models
 
-<div class="multiCol "><div class="col col-50 "><div class="text-center">
+
+<div class='multiCol '><div class='col col-50 '><div class="text-center">
 <p><img src="./images/federated-learning-aggregate.png" alt="">
-<img src="./images/csm_federated-learning_01_2dea2cd6c5.png" width="50%"></p>
+<img src ="./images/csm_federated-learning_01_2dea2cd6c5.png" width=50% /></p>
 </div>
-<div class="multiCol "><div class="col col-50 "><div class="text-center">
+<div class='multiCol '><div class='col col-50 '><div class="text-center">
 <p><img src="images/scr1.png" alt="">
 <img src="images/scr2.png" alt="">
 <img src="images/scr3.png" alt=""></p>
 </div>
 </div> </div>
 </div>
-<div class="col col-50 "><ul>
+<div class='col col-50 '><ul>
 <li>
 <p>The aim is to overcome limitations of traditional federated learning models, where</p>
 <ul>
@@ -233,79 +244,162 @@
 </li>
 </ul>
 </div></div>
+
+
 <div>
 <small>
-[*] D. Domini, G. Aguzzi, N. Farabegoli, M. Viroli and L. Esterle, "Proximity-based Self-Federated Learning," 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Aarhus, Denmark, 2024 <br>
+[*] D. Domini, G. Aguzzi, N. Farabegoli, M. Viroli and L. Esterle, "Proximity-based Self-Federated Learning," 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Aarhus, Denmark, 2024 <br />
 [*] Domini, D., Aguzzi, G., Esterle, L., Viroli, M. (2024). Field-Based Coordination for Federated Learning. In: Castellani, I., Tiezzi, F. (eds) Coordination Models and Languages. COORDINATION 2024
 </small>
 </div>
+
+ ---
+-->
+<h2 id="project-emerge">Project Emerge</h2>
+
+<div class="multiCol "><div class="col col-50 "><h3 id="-european-researchers-night-2025">@ European Researcher’s Night 2025</h3>
+<p>The project involved robots that autonomously locate themselves in a common pattern by using aggregate computing.</p>
+<p>The robots know their position in the space thanks to an <code>Aruco marker</code>, and they use the <code>Collektive</code> library to compute their position in the chosen pattern and move accordingly.</p>
+<p><img src="images/Aggregate%20Runtime%20and-2026-02-19-194841.svg" alt="alt text"></p>
+</div>
+<div class="col col-50 text-center"><p><img src="images/IMG_8654.gif" alt="alt text"></p>
+</div></div>
+<div>
+<small>
+Aguzzi, G. et al. (2025). A Demonstrator for Self-organizing Robot Teams. In: Di Giusto, C., Ravara, A. (eds) Coordination Models and Languages. COORDINATION 2025. Lecture Notes in Computer Science, vol 15731. Springer, Cham. https://doi.org/10.1007/978-3-031-95589-1_12
+</small>
+</div>
 </section><section>
-<h1 id="how-do-i-choose-among-these-representation">How do I choose among these representation?</h1>
-<h2 id="lets-start-from-an-example">Let’s start from an example</h2>
+<h2 id="adaptive-relay-network-using-aggregate-computing">Adaptive Relay Network Using Aggregate Computing</h2>
+
+<div class="multiCol "><div class="col col-50 "><h3 id="-acsos-2025">@ ACSOS 2025</h3>
+<ul>
+<li>To enable autonomous navigation there is the need for real-time high-quality information</li>
+<li>To observe the full-picture, data needs to be collected from central points (i.e. shore stations)</li>
+<li>High-fidelity data are collected locally by ships, then summarised at strategic points within the network and finally forwarded toward the land station</li>
+</ul>
+<div class="text-center">
+  <img src="images/csc.svg" width="40%">
+</div>
+</div>
+<div class="col col-50 text-center"><p><img src="images/simulation.gif" alt="alt text"></p>
+</div></div>
+<div>
+<small>
+M. Baiardi, D. Pianini, G. Al-Falouji and S. Tomforde, "Robust Communication Through Collective Adaptive Relay Schemes for Maritime Vessels," 2025 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Tokyo, Japan, 2025, pp. 21-32, doi: 10.1109/ACSOS66086.2025.00019.
+</small>
+</div>
 </section><section>
-<h2 id="distributed-applications">Distributed Applications</h2>
-<h4 id="running-on-unknown-network-topologies">Running on unknown network topologies</h4>
-<br>
+<h2 id="runtime-replanning-for-robot-missions">Runtime replanning for robot missions</h2>
+
+<div class="multiCol "><div class="col col-50 "><h3 id="-acsos-2025">@ ACSOS 2025</h3>
+<ul>
+<li>Robots are deployed in the field to perform a mission, but they may be subject to unpredictable connectivity failures</li>
+<li>They perform tasks distributed in the environment</li>
+<li>They share their <em>state</em> and <em>tasks</em> using gossiping distributed consesus through aggregate computing</li>
+<li>They recompute their plan thanks to the shared information to optimise the mission execution</li>
+</ul>
+<div class="text-center">
+<img src="images/idea.svg" width="70%">
+</div>
+</div>
+<div class="col col-50 text-center"><img src="images/replanning.gif" width="100%">
+</div></div>
+<div>
+<small>
+G. Aguzzi et al., "A Field-Based Approach for Runtime Replanning in Swarm Robotics Missions," 2025 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Tokyo, Japan, 2025, pp. 1-10, doi: 10.1109/ACSOS66086.2025.00017.
+</small>
+</div>  
+</section><section>
+<!--
+## Distributed Applications
+#### Running on unknown network topologies
+
+<br/>
+
 <figure><img src="images/path2.svg" width="50%">
 </figure>
 
-</section><section>
-<h4 id="may-be-subject-to-unpredictable-connectivity-failures">May be subject to unpredictable connectivity failures</h4>
-<br>
+
+ ---
+
+#### May be subject to unpredictable connectivity failures
+
+<br />
+
 <figure><img src="images/path2-6.svg" width="50%">
 </figure>
 
-</section><section>
-<h4 id="we-need-autonomous-entities-capable-to-adapt-their-behaviour-to-the-failure-and-continue-to-work-as-expected">We need <em>autonomous</em> entities <br>capable to <em>adapt</em> their behaviour to the failure <br>and continue to work as expected</h4>
-<br>
+
+---
+
+#### We need *autonomous* entities <br/>capable to *adapt* their behaviour to the failure <br/>and continue to work as expected 
+<br />
+
 <figure><img src="images/path2-6-1.svg" width="50%">
 </figure>
+ 
 
-</section><section>
-<h2 id="here-lies-the-first-difference"><em>Here lies the first difference</em></h2>
-<p>Viewing system interactions in terms of:</p>
+---
 
-<div class="multiCol "><div class="col col-50 text-center"><p>information propagating through <br> collectives of devices</p>
-<p><i class="fa-solid fa-arrow-down"></i></p>
-<p><code>Aggregate Computing</code></p>
-</div>
-<div class="col col-50 text-center"><p>individual devices with different interactions <br> with their peers in the environment</p>
-<p><i class="fa-solid fa-arrow-down"></i></p>
-<p><code>Multi-Agent Systems</code></p>
-</div></div>
+-->
+<h1 id="my-research-project">My research project</h1>
+<h2 id="bdi-multi-agent-systems">BDI Multi-Agent Systems</h2>
 </section><section>
-<h2 id="agents">Agents</h2>
+<h2 id="bdi-multi-agent-systems-1">BDI Multi-Agent Systems</h2>
 <br>
 <figure><img src="images/path43-7.svg" width="50%">
 </figure>
 
-</section><section>
-<h1 id="agent-oriented-programming">Agent-Oriented Programming</h1>
-<br>
+<!-- ---
+
+# Agent-Oriented Programming
+
+<br />
+
+
 <figure><img src="images/rect46.svg" width="50%">
 </figure>
 
-<p><small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small></p>
-</section><section>
-<h1 id="agent-oriented-programming-1">Agent-Oriented Programming</h1>
-<br>
+
+<small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small>
+
+---
+
+# Agent-Oriented Programming
+
+<br />
+
 <figure><img src="images/BDIAgents.svg" width="50%">
 </figure>
 
-<p><small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small></p>
+
+<small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small>
+-->
 </section><section>
-<h1 id="bdi">BDI?</h1>
-<h2 id="beliefs-desires-intentions">Beliefs, Desires, Intentions</h2>
-<br>
+<h2 id="bdi-multi-agent-systems-2">BDI Multi-Agent Systems</h2>
 <ul>
-<li>It’s a framework to model Multi-Agent Systems through <em>Goals</em></li>
-<li>Reduces the <em>abstraction gap</em> between <em>cognitive abstractions</em> and the abstractions of common paradigms
+<li>System’s description through Goals
 <ul>
-<li>Mimicking human-level notions such as <em>beliefs</em>, <em>desires</em> and <em>intentions</em></li>
+<li>Imperative Paradigm and Functional Paradigm are suboptimal to do so</li>
+<li>Huge abstraction gap between instruction and notion representation</li>
+</ul>
+</li>
+<li>BDI tries to minimise this gap in the abstraction
+<ul>
+<li>Mimicking human-level notions</li>
 </ul>
 </li>
 </ul>
-<h3 id="three-main-abstractions">three main abstractions:</h3>
+<div>
+<br>
+<small> 
+Bratman, Michael. "Intention, plans, and practical reason." (1987) <br>
+</small>
+</div>
+</section><section>
+<h1 id="bdi">BDI?</h1>
+<h2 id="beliefs-desires-intentions">Beliefs, Desires, Intentions</h2>
 <ul>
 <li><em>Beliefs</em>: mental state of the agent, that changes over time.</li>
 <li><em>Desires</em>: motivational state of the system.</li>
@@ -313,10 +407,8 @@
 </ul>
 <div>
 <br>
-<small style="text-align: left"> 
-[1] Bratman, Michael. "Intention, plans, and practical reason." (1987) <br>
-[2] Anand S. Rao and Michael P. Georgeff. "BDI agents: From theory to practice." (1995) <br>
-[3] Anand S. Rao. "Agentspeak(l): BDI agents speak out in a logical computable language." (1996) 
+<small> 
+Anand S. Rao and Michael P. Georgeff. "BDI agents: From theory to practice." (1995) <br>
 </small>
 </div>
 </section><section>
@@ -324,6 +416,11 @@
 <figure><img src="images/Interpreting-AgentSpeakL-Programs.png" width="50%">
 </figure>
 
+<div>
+<small>
+Anand S. Rao. "Agentspeak(L): BDI agents speak out in a logical computable language." (1996) 
+</small>
+</div>
 </section><section>
 <!-- # BDI Agent Programming Languages
 
@@ -379,7 +476,7 @@ mas {                                                   // BDI specification
 ---
 -->
 <h1 id="simplified">…Simplified</h1>
-<h2 id="a-lot-of-similarities-with-autonomic-computing-mape-k-cycle">A lot of similarities with Autonomic Computing MAPE-K cycle</h2>
+<h2 id="an-autonomic-computing-mape-k-cycle">An Autonomic Computing MAPE-K cycle</h2>
 <br>
 
 <div class="multiCol "><div class="col col-50 "><img src="images/autonomic-diagram.svg" width="100%">
@@ -395,8 +492,8 @@ mas {                                                   // BDI specification
 </div>
 </div></div>
 <div>
-<small style="text-align: left"> 
-[*] Baiardi M. - Supporting Autonomic Computing via BDI Tooling. ACSOS-C 2024
+<small> 
+Baiardi M. - Supporting Autonomic Computing via BDI Tooling. ACSOS-C 2024
 </small>
 </div>
 </section><section>
@@ -424,42 +521,79 @@ mas {                                                   // BDI specification
     * hard to build from scratch in a custom fashion
 
 --- -->
-<h1 id="current-project">Current project:</h1>
+<p>
+</p><div class="multiCol "><div class="col col-50 text-center"><h1 id="current-project">Current project:</h1>
 <h1 id="jakta"><em>JaKtA</em></h1>
-<br>
+</div>
+<div class="col col-50 "><img src="images/jakta_website.png" width="100%">
+</div></div>
+<br><p></p>
 <div>
-<small style="text-align: left"> 
-[*] Baiardi, M., Burattini, S., Ciatto, G., &amp; Pianini, D. - Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN Comput. Sci. 5(8): 1003 (2024)
+<small> 
+Baiardi, M., Burattini, S., Ciatto, G., &amp; Pianini, D. - Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN Comput. Sci. 5(8): 1003 (2024)
 </small>
 </div>
 </section><section>
-<h2 id="jakta-1">Jakta</h2>
+<img src="images/Ergonomy.png" width="100%">
+</section><section>
+<h2 id="jakta-jason-like-kotlin-agents">JaKtA: <em>JA</em>son-like <em>K</em>o<em>T</em>lin <em>A</em>gents</h2>
 <ul>
 <li><strong>For software engineers</strong>: Multi-paradigm AOP/BDI+OOP+FP BDI Multi-Agent Systems programming framework</li>
 <li><strong>For research</strong>: Using a single tool to express several types of Distributed systems</li>
 <li><strong>Key features</strong>: flexibility <i class="fa-solid fa-arrow-right"></i> it allows to plug-in other tools (for example <code>simulation</code>)</li>
 </ul>
 </section><section>
-<h2 id="still-a-work-in-progress">Still a work in progress</h2>
+<h2 id="simulation-as-a-validation-tool-for-bdi-agents">Simulation as a validation tool for BDI agents</h2>
+
+<div class="multiCol "><div class="col col-50 text-center"><ul>
+<li>Same code executed in the real deployment and in the simulation</li>
+<li>We identify multiple event granularity mappings between BDI events and DES Simulation events
 <ul>
-<li>It currently offer a framework for BDI agents using a <code>Prolog</code> DSL</li>
-<li>Allows the execution of simulation through the <code>Alchemist</code> tool</li>
-</ul>
-<br>
-<br>
-<h2 id="in-the-future-">In the future …</h2>
-<ul>
-<li>I am <strong>currently</strong> working on a new version of the tool
-<ul>
-<li>to model simplest agents than the AgentSpeak(L) notion (towards MAPE-K)</li>
-<li>to simplify the modularity of the tool</li>
-<li>to let agents adopt <code>aggregate plans</code> … seamlessly :)</li>
+<li><code>Atomic MAS Advancements</code></li>
+<li><code>Atomic Control-Loop Iterations</code></li>
+<li><code>Atomic Control-Loop Phase</code></li>
+<li><code>Atomic BDI Event</code></li>
 </ul>
 </li>
 </ul>
+<br>
+<br>
+<h3 id="accepted-yesterday-at-jaamas">Accepted yesterday at JAAMAS!</h3>
+</div>
+<div class="col col-50 text-center"><img src="images/samusversion.svg" width="100%">
+</div></div>
+<div>
+<small>
+M. Baiardi, "Validation of BDI MASs via Simulation," 2024 28th International Symposium on Distributed Simulation and Real Time Applications (DS-RT), Urbino, Italy, 2024, pp. 128-129, doi: 10.1109/DS-RT62209.2024.00029.
+</small>
+</div>
 </section><section>
-<h1 id="collaboration-with-cau">Collaboration with CAU</h1>
+<h2 id="generic-bdi-tool-for-multi-agent-systems">Generic BDI tool for Multi-Agent Systems</h2>
+<img src="images/generic_bdi.png" width="100%">
+<div>
+<small>
+Burattini, S., Baiardi, M., Ciatto, G., &amp; Pianini, D. (2025). The Gap Between BDI Agents and Semantic Hypermedia and What We Can Do About It. In CEUR WORKSHOP PROCEEDINGS (Vol. 4084, pp. 18-27). CEUR-WS.
+</small>
+</div>
 </section><section>
+<h2 id="still-a-work-in-progress">Still a work in progress</h2>
+<ul>
+<li>I am <strong>currently</strong> working on a new version of the tool
+<ul>
+<li>Abstracting the knowledge representation</li>
+<li>Multi-platform supprot (JVM, JavaScript, Native)</li>
+<li>Efficient implementation using coroutines</li>
+<li>…and to let agents adopt <code>aggregated computation</code> seamlessly</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<div>
+<small>
+M. Baiardi, "Cognitive Agents in the Field: A Hybrid Approach Between Agent-Oriented and Aggregate Computation," 2025 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Tokyo, Japan, 2025, pp. 176-178, doi: 10.1109/ACSOS-C66519.2025.00050.
+</small>
+</div>
 </section>
 
   
