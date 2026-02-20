@@ -85,20 +85,67 @@ outputs = ["Reveal"]
 </small>
 </div>
 
+
+---
+
+## Conceptualization strengths
+
+- A good way to describe the problem allows to explore different perspectives of it.
+
+<img src="./images/conceptual difference.png" width=100% />
+
+
 ---
 
 ## Conceptualization & Tools
 
+{{% multicol %}}{{% col %}}
 
-- `Macroprogramming / Aggregate Computing`: Controlling multiple devices/entities at once using `space` and `time`. 
+<div class="text-center">
+
+`Macroprogramming / Aggregate Computing`
+
+</div>
+
+<!-- Controlling multiple devices/entities at once using `space` and `time`. 
+Languages, cronologically: -->
+
+- `Scafi`[1]: a Scala Domain-Specific Language (DSL)
+- `Collektive`[2]: a Kotlin Multi-platform DSL
+
+{{% /col %}}{{% col %}}
+
+<div class="text-center">
+
+`BDI Agent-Oriented Programming`
+
+</div>
+
+- `JaKtA`[3]: my master thesis, a Kotlin DSL implementation for modelling `BDI` agents.
+
+<br />
+<br />
+<br />
+
+
+{{% /col %}}{{% col %}}
+
+
+<div class="text-center">
+
+`Simulation`
+
+</div>
+
+- `Alchemist`[4]: a simulator for pervasive computing, inspired from chemistry reactions.
+
+<br />
+<br />
+
+{{% /col %}}{{% /multicol %}}
+
   
-  Languages, cronologically:
-  - `Scafi`[1]: a Scala Domain-Specific Language (DSL)
-  - `Collektive`[2]: a Kotlin Multi-platform DSL
-- `BDI Agent-Oriented Programming` 
-  - `JaKtA`[3]: my master thesis, a Kotlin DSL implementation for modelling `BDI` agents.
-- `Simulation`
-  - `Alchemist`[4]: a simulator for pervasive computing, inspired from chemistry reactions.
+
 - Main skills: 
   * `Software development`
   * `Software packaging and delivery`
@@ -128,7 +175,8 @@ outputs = ["Reveal"]
 - Same purpose: a way for representing entities adhering to (some) Autonomic Computing principles
   - ... but different scopes
 
-- `Aggregate Computing` is for representing elements in the environment which exhibit a `collective` behaviour.
+- `Aggregate Computing` is for representing elements in the environment which exhibit a `collective` behaviour, <br />
+controlling multiple devices/entities at once using `space` and `time`. 
 
 - `Multi-Agent Programming` is for representing each entity decision process in an environment.
 
@@ -156,14 +204,6 @@ individual devices with different interactions <br/> with their peers in the env
 `Multi-Agent Systems`
 
 {{% /col %}}{{% /multicol %}}
-
----
-
-## Conceptualization strengths
-
-- A good way to describe the problem allows to explore different perspectives of it.
-
-<img src="./images/conceptual difference.png" width=100% />
 
 ---
 
